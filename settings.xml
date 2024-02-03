@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 http://maven.apache.org/xsd/settings-1.2.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>hashirahbar123@gail.com</username>
+      <password>cmVmdGtuOjAxOjE3Mzg0ODM3OTI6TlZpUXVqaTdUZzRiWnFrMHp4QlNlN21pZkxm</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>hashirahbar123@gail.com</username>
+      <password>cmVmdGtuOjAxOjE3Mzg0ODM3OTI6TlZpUXVqaTdUZzRiWnFrMHp4QlNlN21pZkxm</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>aws-libs-release</name>
+          <url>https://hashirahbar123.jfrog.io/artifactory/aws-libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>aws-libs-snapshot</name>
+          <url>https://hashirahbar123.jfrog.io/artifactory/aws-libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>aws-libs-release</name>
+          <url>https://hashirahbar123.jfrog.io/artifactory/aws-libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>aws-libs-snapshot</name>
+          <url>https://hashirahbar123.jfrog.io/artifactory/aws-libs-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+</settings>
